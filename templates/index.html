@@ -148,6 +148,46 @@
     </div>
 
 
+    <div class="feedback">
+      <h2>Остались вопросы?</h2>
+      <p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+
+      <form class="feedback-form" action="/keksby-mail" method="post">
+        <div class="feedback-form-group">
+          <label for="fullname">Представьтесь, пожалуйста:</label>
+          <input type="text" name="fullname" id="fullname" value="Имя Фамилия">
+        </div>
+        <div class="feedback-form-group">
+          <label for="phone">Контактный телефон</label>
+          <input type="text" name="phone" id="phone" value="8(XXX)XXX-XX-XX">
+        </div>
+        <div class="feedback-form-group">
+          <label for="email">Электронная почта</label>
+          <input type="text" name="email" id="email" value="E-Mail">
+        </div>
+        <div class="checkbox-area">
+          <label>
+            <input type="checkbox" name="subscription" checked>
+            Согласен получать спам и смс на телефон
+          </label>
+        </div>
+        <div class="feedback-form-group">
+          <label for="topic">Тема обращения:</label>
+          <select name="topic" id="topic">
+            <option value="1">Условия доставки</option>
+            <option value="1">Возврат товара</option>
+            <option value="1">Жалоба в Роспотребнадзор</option>
+          </select>
+        </div>
+        <div class="feedback-form-group">
+          <label for="message">Текст обращения:</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="submit" class="btn" name="fedback-submission" value="Отправить">
+      </form>
+
+    </div>
+
     <div class="page-footer">
       <div class="footer-top">
         <div class="footer-logo">
